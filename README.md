@@ -9,7 +9,7 @@ cd your-project-name
 
 
 ## 3. Install Dependencies:
-npm install  # Assuming npm is used
+npm install  (Assuming npm is used)
 
 
 ## 4. Run the Development Server:
