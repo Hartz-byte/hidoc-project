@@ -56,6 +56,7 @@ const Footer = () => {
         height={"400px"}
         backgroundColor={"#091734"}
         display={"flex"}
+        justifyContent={"space-between"}
         gap={8}
       >
         {/* left section */}
@@ -123,6 +124,7 @@ const Footer = () => {
           display={"flex"}
           flexDirection={"column"}
           justifyContent={"center"}
+          mr={5}
         >
           {/* text */}
           <Typography fontWeight={"bold"} color={"white"} mb={2}>
