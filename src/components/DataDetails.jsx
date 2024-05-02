@@ -116,6 +116,7 @@ const DataDetails = () => {
                 border: "3px solid black",
                 width: "400px",
                 minHeight: "315px",
+                marginBottom: isMobile ? "10px" : "",
               }}
             >
               <Box

@@ -34,11 +34,13 @@ const TextButtons = () => {
 
       {/* Buttons */}
       <Box
+        width={"100%"}
         display="flex"
-        flexDirection={isMobile ? "column" : "column"}
+        flexDirection={"column"}
         alignItems={isMobile ? "center" : ""}
         gap={1}
         mr={20}
+        mb={isMobile ? 7 : 0}
       >
         <Box display="flex" gap={1}>
           <Button
