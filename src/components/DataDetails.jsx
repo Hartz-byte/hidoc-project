@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Box, Typography, Button, CircularProgress } from "@mui/material";
 import axios from "axios";
+import { useMediaQuery } from "@mui/material/";
 
 const DataDetails = () => {
   const [drugData, setDrugData] = useState(null);
   const [drugDetails, setDrugDetails] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [activeButton, setActiveButton] = useState(null);
+  const [activeButtonIndex, setActiveButtonIndex] = useState(0);
 
+  const isMobile = useMediaQuery("(max-width: 1233px)");
+
+  // api call
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
@@ -36,18 +40,14 @@ const DataDetails = () => {
   }, []);
 
   // handle button click
-  const handleClick = (index) => {
-    setActiveButton(index);
+  const handleButtonClick = (index) => {
+    setActiveButtonIndex(index);
   };
-
-  // setting default option active
-  useEffect(() => {
-    setActiveButton(2);
-  }, []);
 
   return (
     <Box
       display="flex"
+      flexDirection={isMobile ? "column" : "row"}
       justifyContent="center"
       alignItems="center"
       minHeight="50vh"
@@ -67,7 +67,7 @@ const DataDetails = () => {
             sx={{
               border: "3px solid black",
               width: "400px",
-              minHeight: "265px",
+              minHeight: "310px",
             }}
           >
             <Box
@@ -90,7 +90,16 @@ const DataDetails = () => {
                     alignItems={"center"}
                     mt={2}
                   >
-                    <Button key={index} width={"150px"} textTransform={"none"}>
+                    <Button
+                      key={index}
+                      width={"150px"}
+                      textTransform={"none"}
+                      sx={{
+                        backgroundColor:
+                          activeButtonIndex === index ? "#56C6DC" : "white",
+                      }}
+                      onClick={() => handleButtonClick(index)}
+                    >
                       <Typography color={"black"}>{drug.drugName}</Typography>
                     </Button>
                   </Box>
@@ -104,7 +113,7 @@ const DataDetails = () => {
             sx={{
               border: "3px solid black",
               width: "400px",
-              minHeight: "265px",
+              minHeight: "310px",
             }}
           >
             <Box
@@ -117,8 +126,25 @@ const DataDetails = () => {
               </Typography>
             </Box>
 
+            {/* topic */}
+            <Box display="flex" justifyContent="center">
+              <Typography variant="h6" color="#73B8CE" gutterBottom>
+                {drugData && drugData[activeButtonIndex]?.drugName}
+              </Typography>
+            </Box>
+
             {/* drug details content */}
-            <Box></Box>
+            {drugData && (
+              <Box>
+                {activeButtonIndex !== null && (
+                  <Box m={1}>
+                    <Typography variant="body1" textAlign="center">
+                      {drugData[activeButtonIndex].drugDetails}
+                    </Typography>
+                  </Box>
+                )}
+              </Box>
+            )}
           </Box>
         </>
       )}

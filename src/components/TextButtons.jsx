@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material/";
 
 const TextButtons = () => {
-  const [activeButton, setActiveButton] = useState(null);
+  const [activeButton, setActiveButton] = useState(2);
 
   // handle button click
   const handleClick = (index) => {
@@ -11,10 +11,6 @@ const TextButtons = () => {
   };
 
   const isMobile = useMediaQuery("(max-width: 1233px)");
-
-  useEffect(() => {
-    setActiveButton(2);
-  }, []);
 
   return (
     <Box
