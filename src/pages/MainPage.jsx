@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Box } from "@mui/material";
+import Header from "../components/Header";
 
 const MainPage = () => {
   return (
-    <div>MainPage</div>
-  )
-}
+    <Box>
+      {/* header */}
+      <Header />
+    </Box>
+  );
+};
 
-export default MainPage
+export default MainPage;
