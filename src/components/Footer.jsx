@@ -80,10 +80,10 @@ const Footer = () => {
 
           {/* icons */}
           <Box display={"flex"} gap={2}>
-            <FacebookIcon sx={{ color: "white" }} />
-            <InstagramIcon sx={{ color: "white" }} />
-            <YouTubeIcon sx={{ color: "white" }} />
-            <LinkedInIcon sx={{ color: "white" }} />
+            <FacebookIcon sx={{ color: "white", cursor: "pointer" }} />
+            <InstagramIcon sx={{ color: "white", cursor: "pointer" }} />
+            <YouTubeIcon sx={{ color: "white", cursor: "pointer" }} />
+            <LinkedInIcon sx={{ color: "white", cursor: "pointer" }} />
           </Box>
         </Box>
 
@@ -92,7 +92,7 @@ const Footer = () => {
           display={"flex"}
           flexDirection={"column"}
           justifyContent={"center"}
-          gap={2}
+          gap={3}
           width={"450px"}
         >
           <Typography fontWeight={"bold"} color={"white"} fontSize={18}>
@@ -103,16 +103,18 @@ const Footer = () => {
             Please contact the below details for any other information.
           </Typography>
 
-          <Typography color={"#0582B0"}>Email:</Typography>
+          <Box>
+            <Typography color={"#0582B0"}>Email:</Typography>
+            <Typography color={"white"}>info@hidoc.co</Typography>
+          </Box>
 
-          <Typography color={"white"}>info@hidoc.co</Typography>
-
-          <Typography color={"#0582B0"}>Address:</Typography>
-
-          <Typography color={"white"}>
-            Hidoc Dr. Inc, 2055 Limestone Rd, STE 200-C, Wilmington, DE, 19808,
-            United States.
-          </Typography>
+          <Box>
+            <Typography color={"#0582B0"}>Address:</Typography>
+            <Typography color={"white"}>
+              Hidoc Dr. Inc, 2055 Limestone Rd, STE 200-C, Wilmington, DE,
+              19808, United States.
+            </Typography>
+          </Box>
         </Box>
 
         {/* right section */}

@@ -56,7 +56,7 @@ const Header = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              width: "70px",
+              width: "75px",
               height: "25px",
               backgroundColor: "white",
               borderRadius: "40% / 90%",
@@ -67,7 +67,10 @@ const Header = () => {
               fontSize="small"
               sx={{ fill: "none", stroke: "black", strokeWidth: "1" }}
             />
-            <Typography color={"red"}>274</Typography>
+
+            <Typography color={"red"} ml={0.5}>
+              274
+            </Typography>
           </Box>
         </IconButton>
 
