@@ -1,11 +1,12 @@
 import React from "react";
+import { Box } from "@mui/material";
 import MainPage from "./pages/MainPage";
 
 function App() {
   return (
-    <div>
+    <Box>
       <MainPage />
-    </div>
+    </Box>
   );
 }
 

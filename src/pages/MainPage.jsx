@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import TopBox from "../components/TopBox";
 import TextButtons from "../components/TextButtons";
 import DataDetails from "../components/DataDetails";
+import Footer from "../components/Footer";
 
 const MainPage = () => {
   return (
@@ -17,8 +18,11 @@ const MainPage = () => {
       {/* text and buttons */}
       <TextButtons />
 
-      {/* data and details boxes */}
+      {/* data/details table and explore more */}
       <DataDetails />
+
+      {/* footer */}
+      <Footer />
     </Box>
   );
 };

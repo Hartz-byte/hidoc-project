@@ -62,6 +62,7 @@ const TopBox = () => {
           />
           {/* icon */}
           <InputAdornment
+            position="end"
             sx={{
               position: "absolute",
               marginTop: "17px",
