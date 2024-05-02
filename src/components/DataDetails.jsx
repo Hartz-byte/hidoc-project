@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Box, Typography, Button, CircularProgress } from "@mui/material";
 import axios from "axios";
 import { useMediaQuery } from "@mui/material/";
+
 import ExploreMore from "./ExploreMore";
 
 const DataDetails = () => {
