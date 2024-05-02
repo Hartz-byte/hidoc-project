@@ -22,42 +22,21 @@ const Header = () => {
       {/* Navigation Buttons */}
       <Grid item xs={9} display={"flex"} alignItems={"center"}>
         <Button sx={{ textTransform: "none", color: "black" }}>Drugs</Button>
-        <Divider
-          sx={{ width: "1px", height: "15px", bgcolor: "black" }}
-          orientation="vertical"
-        />
+        <Divider sx={{ height: 17, bgcolor: "black" }} orientation="vertical" />
         <Button sx={{ textTransform: "none", color: "black" }}>
           Calculators
         </Button>
-        <Divider
-          sx={{ width: "1px", height: "15px", bgcolor: "black" }}
-          orientation="vertical"
-        />
+        <Divider sx={{ height: 17, bgcolor: "black" }} orientation="vertical" />
         <Button sx={{ textTransform: "none", color: "black" }}>Articles</Button>
-        <Divider
-          sx={{ width: "1px", height: "15px", bgcolor: "black" }}
-          orientation="vertical"
-        />
+        <Divider sx={{ height: 17, bgcolor: "black" }} orientation="vertical" />
         <Button sx={{ textTransform: "none", color: "black" }}>News</Button>
-        <Divider
-          sx={{ width: "1px", height: "15px", bgcolor: "black" }}
-          orientation="vertical"
-        />
+        <Divider sx={{ height: 17, bgcolor: "black" }} orientation="vertical" />
         <Button sx={{ textTransform: "none", color: "black" }}>Quizzes</Button>
-        <Divider
-          sx={{ width: "1px", height: 15, bgcolor: "black" }}
-          orientation="vertical"
-        />
+        <Divider sx={{ height: 17, bgcolor: "black" }} orientation="vertical" />
         <Button sx={{ textTransform: "none", color: "black" }}>Surveys</Button>
-        <Divider
-          sx={{ width: "1px", height: 15, bgcolor: "black" }}
-          orientation="vertical"
-        />
+        <Divider sx={{ height: 17, bgcolor: "black" }} orientation="vertical" />
         <Button sx={{ textTransform: "none", color: "black" }}>Webinars</Button>
-        <Divider
-          sx={{ width: "1px", height: 15, bgcolor: "black" }}
-          orientation="vertical"
-        />
+        <Divider sx={{ height: 17, bgcolor: "black" }} orientation="vertical" />
         <Button sx={{ textTransform: "none", color: "black" }}>
           Guidelines
         </Button>
