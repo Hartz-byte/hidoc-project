@@ -5,6 +5,7 @@ import { useMediaQuery } from "@mui/material/";
 const TextButtons = () => {
   const [activeButton, setActiveButton] = useState(null);
 
+  // handle button click
   const handleClick = (index) => {
     setActiveButton(index);
   };
