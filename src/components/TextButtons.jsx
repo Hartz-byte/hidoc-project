@@ -42,7 +42,9 @@ const TextButtons = () => {
         mr={20}
         mb={isMobile ? 7 : 0}
       >
+        {/* upper section button */}
         <Box display="flex" gap={1}>
+          {/* Anesthesisa */}
           <Button
             variant="outlined"
             sx={{
@@ -56,6 +58,8 @@ const TextButtons = () => {
           >
             Anesthesisa
           </Button>
+
+          {/* Cardiology */}
           <Button
             variant="outlined"
             sx={{
@@ -69,6 +73,8 @@ const TextButtons = () => {
           >
             Cardiology
           </Button>
+
+          {/* Critical Care */}
           <Button
             variant="outlined"
             sx={{
@@ -84,7 +90,9 @@ const TextButtons = () => {
           </Button>
         </Box>
 
+        {/* lower section buttons */}
         <Box display="flex" gap={1}>
+          {/* Dentistry */}
           <Button
             variant="outlined"
             sx={{
@@ -96,8 +104,10 @@ const TextButtons = () => {
             }}
             onClick={() => handleClick(3)}
           >
-            Anesthesisa
+            Dentistry
           </Button>
+
+          {/* Dermatology */}
           <Button
             variant="outlined"
             sx={{
@@ -109,8 +119,10 @@ const TextButtons = () => {
             }}
             onClick={() => handleClick(4)}
           >
-            Cardiology
+            Dermatology
           </Button>
+
+          {/* Diabetology */}
           <Button
             variant="outlined"
             sx={{
@@ -122,7 +134,7 @@ const TextButtons = () => {
             }}
             onClick={() => handleClick(5)}
           >
-            Critical Care
+            Diabetology
           </Button>
         </Box>
       </Box>
